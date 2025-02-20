@@ -14,7 +14,7 @@ disconnect-home:
 _install-bazzite-tv-flatpaks:
     #!/bin/bash
 #    BAZZITE_FLATPAK_LIST="$(curl https://raw.githubusercontent.com/ublue-os/bazzite/main/scripts/kde_flatpaks/flatpaks | tr '\n' ' ')"
-    BAZZITE-TV_FLATPAK_LIST="$(curl https://raw.githubusercontent.com/noelmiller/isengard/main/flatpaks/isengard_flatpaks | tr '\n' ' ')"
+    BAZZITE-TV_FLATPAK_LIST="$(curl https://raw.githubusercontent.com/dillydilly1990/bazzite-tv/main/files/flatpaks/bazzite-tv_flatpaks | tr '\n' ' ')"
     echo "Installing Bazzite Flatpaks.."
     flatpak --system -y install ${BAZZITE_FLATPAK_LIST}
     echo "Installing Isengard Flatpaks.."
