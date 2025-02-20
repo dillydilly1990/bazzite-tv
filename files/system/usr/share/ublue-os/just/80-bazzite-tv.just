@@ -11,11 +11,8 @@ disconnect-home:
     tailscale down
 
 # Install system flatpaks
-_install-bazzite-tv-flatpaks:
+setup-bazzite-tv:
     #!/bin/bash
-#    BAZZITE_FLATPAK_LIST="$(curl https://raw.githubusercontent.com/ublue-os/bazzite/main/scripts/kde_flatpaks/flatpaks | tr '\n' ' ')"
     BAZZITE-TV_FLATPAK_LIST="$(curl https://raw.githubusercontent.com/dillydilly1990/bazzite-tv/main/files/flatpaks/bazzite-tv_flatpaks | tr '\n' ' ')"
-    echo "Installing Bazzite Flatpaks.."
-    flatpak --system -y install ${BAZZITE_FLATPAK_LIST}
-    echo "Installing Isengard Flatpaks.."
+    echo "Installing bazzite-tv Flatpaks.."
     flatpak --system -y install ${BAZZITE-TV_FLATPAK_LIST}
