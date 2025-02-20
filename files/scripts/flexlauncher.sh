@@ -18,4 +18,5 @@ echo 'build and test'
 make
 ./flex-launcher
 echo 'install'
+export XDG_RUNTIME_DIR=/tmp/
 sudo make install
