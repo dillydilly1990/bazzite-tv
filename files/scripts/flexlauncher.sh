@@ -7,7 +7,7 @@ set -oue pipefail
 
 # Your code goes here.
 echo 'install build dependencys'
-sudo dnf install SDL2-devel SDL2_image-devel SDL2_ttf-devel inih-devel
+rpm-ostree install SDL2-devel SDL2_image-devel SDL2_ttf-devel inih-devel
 echo 'clone master repo and create build dir'
 git clone https://github.com/complexlogic/flex-launcher.git
 cd flex-launcher
