@@ -19,7 +19,7 @@ modules:
   - type: script
     snippets:
     scripts:
-      - flexlauncher.sh # example: run config/scripts/myscript.sh
+      - flexlauncher.sh
 
   - type: rpm-ostree
 #    repos:
