@@ -10,7 +10,7 @@ disconnect-home:
     echo "Disconnecting from home"
     tailscale down
 
-# Install system flatpaks
+# setup the rest of bazzite tv that cant be done in github
 setup-bazzite-tv:
     #!/bin/bash
     BAZZITE-TV_FLATPAK_LIST="$(curl https://raw.githubusercontent.com/dillydilly1990/bazzite-tv/main/files/flatpaks/bazzite-tv_flatpaks | tr '\n' ' ')"
