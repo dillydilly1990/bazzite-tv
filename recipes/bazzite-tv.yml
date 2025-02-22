@@ -16,11 +16,6 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-        
-  - type: script
-#    snippets:
-    scripts:
-      - just.sh
 
   - type: rpm-ostree
 #    repos:
@@ -40,6 +35,18 @@ modules:
 #      remove:
 #        - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
+            
+  - type: script
+#    snippets:
+    scripts:
+      - just.sh
+
+  - type: systemd
+    system:
+      enabled:
+        - podman.socket
+        - tailscaled
+        - ublue-update.timer
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
