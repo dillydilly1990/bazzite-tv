@@ -13,6 +13,7 @@ disconnect-home:
 # setup the rest of bazzite tv that cant be done in github
 setup-bazzite-tv:
     #!/bin/bash
-    BAZZITE-TV_FLATPAK_LIST="$(curl https://github.com/dillydilly1990/bazzite-tv/blob/main/files/flatpaks/bazzite-tv_flatpaks | tr '\n' ' ')"
-    echo "Installing bazzite-tv Flatpaks.."
-    flatpak --system -y install ${BAZZITE-TV_FLATPAK_LIST}
+#    BAZZITE-TV_FLATPAK_LIST="$(curl https://github.com/dillydilly1990/bazzite-tv/blob/main/files/flatpaks/bazzite-tv_flatpaks | tr '\n' ' ')"
+#    echo "Installing bazzite-tv Flatpaks.."
+#    flatpak --system -y install ${BAZZITE-TV_FLATPAK_LIST}
+    distrobox-assemble create --file https://raw.githubusercontent.com/89luca89/dotfiles/master/distrobox.ini 
