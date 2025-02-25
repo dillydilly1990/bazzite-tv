@@ -16,4 +16,4 @@ setup-bazzite-tv:
 #    BAZZITE-TV_FLATPAK_LIST="$(curl https://github.com/dillydilly1990/bazzite-tv/blob/main/files/flatpaks/bazzite-tv_flatpaks | tr '\n' ' ')"
 #    echo "Installing bazzite-tv Flatpaks.."
 #    flatpak --system -y install ${BAZZITE-TV_FLATPAK_LIST}
-    distrobox-assemble create --file https://raw.githubusercontent.com/89luca89/dotfiles/master/distrobox.ini 
+    distrobox-assemble create --file https://raw.githubusercontent.com/dillydilly1990/bazzite-tv/refs/heads/main/files/disrobox/distrobox.ini
