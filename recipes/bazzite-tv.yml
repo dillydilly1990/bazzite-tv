@@ -18,12 +18,10 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
         
   - type: script
-    snippets:
-      - "dnf copr enable elxreno/zsync -y"
-      - "git clone https://github.com/quickemu-project/quickemu"
-      - "rpm-ostree install https://github.com/quickemu-project/quickgui/releases/download/1.2.10/quickgui-1.2.10+1-linux.rpm"
+#    snippets:
     scripts:
       - just.sh
+      - quickemu.sh
       
   - type: rpm-ostree
     repos:
