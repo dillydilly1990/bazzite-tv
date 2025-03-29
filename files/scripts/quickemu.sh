@@ -9,3 +9,4 @@ rpm-ostree install bash coreutils curl edk2-tools genisoimage grep jq mesa-demos
 git clone https://github.com/quickemu-project/quickemu
 cd quickemu
 make install quickemu
+rpm-ostree install https://github.com/quickemu-project/quickgui/releases/download/1.2.10/quickgui-1.2.10+1-linux.rpm
