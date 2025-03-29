@@ -20,6 +20,7 @@ modules:
   - type: script
     snippets:
       - "dnf copr enable elxreno/zsync -y"
+      - "git clone https://github.com/quickemu-project/quickemu"
     scripts:
       - just.sh
       
