@@ -19,7 +19,6 @@ setup-bazzite-tv:
 ####
     echo "Setting up Decky Loader"  
 setup-decky ACTION="install":
-    #!/usr/bin/bash
     source /usr/lib/ujust/ujust.sh
     DECKY_STATE="${b}${red}Not Installed${n}"
     if [[ -d $HOME/homebrew/plugins ]]; then
@@ -53,7 +52,6 @@ setup-decky ACTION="install":
     fi
 ####  Decky Plugin Bazzite bazzite-buddy
       echo "Install Bazzite Buddy"
-    #!/bin/bash
     PLUGIN_URL="https://github.com/xXJSONDeruloXx/bazzite-buddy/releases/download/stable/bazzite-buddy.zip"
     PLUGIN_NAME="bazzite-buddy"
     PLUGIN_DIR="$HOME/homebrew/plugins"
