@@ -19,7 +19,7 @@ modules:
         
   - type: script
 #    snippets:
-      - "wget https://flirc.tv/products/skip1s-remote-universal-remote-control?variant=43489094729960#"
+#      - "wget https://flirc.tv/products/skip1s-remote-universal-remote-control?variant=43489094729960#"
     scripts:
       - just.sh
 #      - quickemu.sh
