@@ -19,6 +19,7 @@ modules:
         
   - type: script
 #    snippets:
+      - "wget https://flirc.tv/products/skip1s-remote-universal-remote-control?variant=43489094729960#"
     scripts:
       - just.sh
 #      - quickemu.sh
@@ -36,6 +37,9 @@ modules:
       install:
         - tv.kodi.Kodi
         - com.stremio.Stremio
+        - com.usebottles.bottles
+        - me.kozec.syncthingtk
+        - com.github.mtkennerly.ludusavi
 #      remove:
 #        - org.gnome.eog
     user: {} # Also add Flathub user repo, but no user packages
