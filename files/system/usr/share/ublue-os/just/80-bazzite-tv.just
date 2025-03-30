@@ -16,9 +16,8 @@ setup-bazzite-tv:
     echo "Creating Distroboxes"
     distrobox-assemble create --file https://raw.githubusercontent.com/dillydilly1990/bazzite-tv/refs/heads/main/files/disrobox/distrobox.ini
 ####   Install and configure Decky Loader (https://github.com/SteamDeckHomebrew/decky-loader) and plugins for alternative handhelds
-####
     echo "Setting up Decky Loader"  
-setup-decky ACTION="install":
+# setup-decky ACTION="install":
     source /usr/lib/ujust/ujust.sh
     DECKY_STATE="${b}${red}Not Installed${n}"
     if [[ -d $HOME/homebrew/plugins ]]; then
