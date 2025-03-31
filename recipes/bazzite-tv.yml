@@ -38,6 +38,7 @@ modules:
       install:
         - io.github.plrigaux.sysd-manager
         - com.stremio.Stremio
+        - tv.kodi.kodi
         - com.usebottles.bottles
         - me.kozec.syncthingtk
         - com.github.mtkennerly.ludusavi
